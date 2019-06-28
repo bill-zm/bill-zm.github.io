@@ -25,12 +25,21 @@
   </head>
   <body>
     <div class="container">
+      <p style="color: #FF4040;">1.运营相关的内容需要及时发布刷新，该模块使用H5</p>
+      <p style="color: #FF4040;">2.该模块使用外网策略，目前放到外网：https://bill-zm.github.io，内容支持及时刷新</p>
+      <p style="color: #FF4040;">3.支持跳转第三方网站跳转(如：百度)，支持跳转App内部功能页面</p>
+      <p style="color: #FF4040;">4.该模块使用库的方式集成(Framework)，完全解耦合，可以集成到任何的App中</p>
+      <p>示例如下:</p>
+      <div style="height: 10px"></div>
       <div class="header clearfix">
         <nav style="display: flex;flex-direction: row;align-items: center;">
           <div style="color: #c69500;">福特中国进口车</div>
-          <div style="flex: 1;width: 100%"></div>
+          <div style="width: 7px"></div>
           <button  style="font-family: PingFangSC-Medium;font-size: 12px;padding: 0px 8px 0px 8px;height: 44px;background-color: #FFFFFF;
-          border: 1px solid #55beed;border-radius:10px;color:#55beed;flex: 1;width: 30px;" onclick="reconnect();">调用原生蓝牙能力</button>
+          border: 1px solid #55beed;border-radius:10px;color:#55beed;flex: 1;width: 30px;" onclick="tobaiduClick();">跳转百度</button>
+          <div style="width: 7px"></div>
+          <button  style="font-family: PingFangSC-Medium;font-size: 12px;padding: 0px 8px 0px 8px;height: 44px;background-color: #FFFFFF;
+          border: 1px solid #55beed;border-radius:10px;color:#55beed;flex: 1;" onclick="reconnect();">调用原生蓝牙能力</button>
         </nav>
       </div>
       <img style="width: 100%;height: auto" src="assets/gif1.gif">
@@ -41,6 +50,9 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
+      function tobaiduClick() {
+        window.location.href='https://www.baidu.com/';
+      }
       function reconnect(){
         //todo
         //alert("调用native 蓝牙SDK能力");
